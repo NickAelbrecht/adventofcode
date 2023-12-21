@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "adventofcode", "adventofcode\adventofcode.csproj", "{695C8330-4A38-4984-861D-C775B1C3271A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Core", "02 - Core", "{D98ACB01-3DD3-4B03-B0CE-AD2C4357AF22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode.Business", "adventofcode.business\AdventOfCode.Business.csproj", "{6B415085-F0D2-4DBD-8926-BE5CF8056CCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Startup", "01 - Startup", "{1F57DE65-521B-4BCD-B2D5-CFB9F02CA90F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Tests", "03 - Tests", "{72E668CE-15CD-4AA9-8339-0B9A2FF937B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode.Business.UnitTests", "AdventOfCode.Business.UnitTests\AdventOfCode.Business.UnitTests.csproj", "{23D977FD-53D3-432D-9BA2-68EA5602B475}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Utils", "04 - Utils", "{9250AD88-E5F3-4F94-92B0-7E2EE6596848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Concerns", "AdventOfCode.Concerns\AdventOfCode.Concerns.csproj", "{FE66E56D-244E-43B8-A4A2-9304E735723D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventOfCode.Api", "AdventOfCode.Api\AdventOfCode.Api.csproj", "{29AD5543-6571-4F80-A303-BCBBA32ACFFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +25,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{695C8330-4A38-4984-861D-C775B1C3271A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{695C8330-4A38-4984-861D-C775B1C3271A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{695C8330-4A38-4984-861D-C775B1C3271A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{695C8330-4A38-4984-861D-C775B1C3271A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B415085-F0D2-4DBD-8926-BE5CF8056CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B415085-F0D2-4DBD-8926-BE5CF8056CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B415085-F0D2-4DBD-8926-BE5CF8056CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B415085-F0D2-4DBD-8926-BE5CF8056CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D977FD-53D3-432D-9BA2-68EA5602B475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D977FD-53D3-432D-9BA2-68EA5602B475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D977FD-53D3-432D-9BA2-68EA5602B475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D977FD-53D3-432D-9BA2-68EA5602B475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE66E56D-244E-43B8-A4A2-9304E735723D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE66E56D-244E-43B8-A4A2-9304E735723D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE66E56D-244E-43B8-A4A2-9304E735723D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE66E56D-244E-43B8-A4A2-9304E735723D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29AD5543-6571-4F80-A303-BCBBA32ACFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29AD5543-6571-4F80-A303-BCBBA32ACFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29AD5543-6571-4F80-A303-BCBBA32ACFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29AD5543-6571-4F80-A303-BCBBA32ACFFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B415085-F0D2-4DBD-8926-BE5CF8056CCF} = {D98ACB01-3DD3-4B03-B0CE-AD2C4357AF22}
+		{23D977FD-53D3-432D-9BA2-68EA5602B475} = {72E668CE-15CD-4AA9-8339-0B9A2FF937B1}
+		{FE66E56D-244E-43B8-A4A2-9304E735723D} = {9250AD88-E5F3-4F94-92B0-7E2EE6596848}
+		{29AD5543-6571-4F80-A303-BCBBA32ACFFD} = {1F57DE65-521B-4BCD-B2D5-CFB9F02CA90F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {37D36D72-410B-4EDF-96B0-237A01EDD6C6}
