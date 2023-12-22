@@ -1,4 +1,5 @@
-﻿using AdventOfCode.Business.Managers;
+﻿using AdventOfCode.Business.Helpers;
+using AdventOfCode.Business.Managers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AdventOfCode.Business.Extensions
@@ -11,6 +12,10 @@ namespace AdventOfCode.Business.Extensions
             // Managers
             // - Advent of code
             services.AddScoped<IAdventOfCodeManager, AdventOfCodeManager>();
+
+            // Helpers
+            // - Filemanager
+            services.AddScoped<IFileManager, FileManager>();
 
             return services;
         }

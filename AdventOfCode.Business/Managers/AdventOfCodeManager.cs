@@ -1,6 +1,6 @@
 ﻿using System;
-using System.IO;
 using System.Linq;
+using AdventOfCode.Business.Helpers;
 using AdventOfCode.Business.Managers.Models;
 using Microsoft.Extensions.Logging;
 
@@ -67,11 +67,5 @@ namespace AdventOfCode.Business.Managers
             resultModel.Calibration = fileTotalCount;
             return resultModel;
         }
-    }
-
-    // Added for easier unit test mocking purposes
-    public interface IFileManager
-    {
-        StreamReader StreamReader(string path);
     }
 }
